@@ -1,5 +1,6 @@
 import { lazy, Suspense } from 'react';
 import Layout from './layouts/home-layout';
+
 const View = lazy(() => import('./components/View'));
 
 const App = () => {

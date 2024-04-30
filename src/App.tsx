@@ -1,17 +1,18 @@
-// import View from './components/View';
+import { lazy, Suspense } from 'react';
+import Layout from './layouts/home-layout';
+const View = lazy(() => import('./components/View'));
 
 const App = () => {
   return (
-    <div className="">
-      <header className="App-header">
-        <h1>egjs-view360</h1>
-      </header>
+    <Layout>
       <main
-        className='bg-gray-900'
+        className='bg-white'
       >
-        {/* <View /> */}
+        <Suspense fallback={<div>Loading...</div>}>
+          <View />
+        </Suspense>
       </main>
-    </div>
+    </Layout>
   );
 }
 

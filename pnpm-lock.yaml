@@ -9,18 +9,18 @@ dependencies:
     specifier: ^4.0.0-beta.7
     version: 4.0.0-beta.7
   react:
-    specifier: ^18.3.1
+    specifier: ^18.2.0
     version: 18.3.1
   react-dom:
-    specifier: ^18.3.1
+    specifier: ^18.2.0
     version: 18.3.1(react@18.3.1)
 
 devDependencies:
   '@types/react':
-    specifier: ^18.3.3
+    specifier: ^18.2.66
     version: 18.3.3
   '@types/react-dom':
-    specifier: ^18.3.0
+    specifier: ^18.2.22
     version: 18.3.0
   '@typescript-eslint/eslint-plugin':
     specifier: ^7.2.0
@@ -30,7 +30,7 @@ devDependencies:
     version: 7.7.0(eslint@8.57.0)(typescript@5.5.4)
   '@vitejs/plugin-react-swc':
     specifier: ^3.5.0
-    version: 3.6.0(vite@5.3.5)
+    version: 3.6.0(vite@5.4.0)
   autoprefixer:
     specifier: ^10.4.19
     version: 10.4.19(postcss@8.4.40)
@@ -38,7 +38,7 @@ devDependencies:
     specifier: ^8.57.0
     version: 8.57.0
   eslint-plugin-react-hooks:
-    specifier: ^4.6.2
+    specifier: ^4.6.0
     version: 4.6.2(eslint@8.57.0)
   eslint-plugin-react-refresh:
     specifier: ^0.4.6
@@ -50,11 +50,11 @@ devDependencies:
     specifier: ^3.4.3
     version: 3.4.3
   typescript:
-    specifier: ^5.5.4
+    specifier: ^5.2.2
     version: 5.5.4
   vite:
-    specifier: ^5.3.5
-    version: 5.3.5
+    specifier: ^5.4.0
+    version: 5.4.0
 
 packages:
 
@@ -856,13 +856,13 @@ packages:
     resolution: {integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==}
     dev: true
 
-  /@vitejs/plugin-react-swc@3.6.0(vite@5.3.5):
+  /@vitejs/plugin-react-swc@3.6.0(vite@5.4.0):
     resolution: {integrity: sha512-XFRbsGgpGxGzEV5i5+vRiro1bwcIaZDIdBRP16qwm+jP68ue/S8FJTBEgOeojtVDYrbSua3XFp71kC8VJE6v+g==}
     peerDependencies:
       vite: ^4 || ^5
     dependencies:
       '@swc/core': 1.4.16
-      vite: 5.3.5
+      vite: 5.4.0
     transitivePeerDependencies:
       - '@swc/helpers'
     dev: true
@@ -2164,8 +2164,8 @@ packages:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
     dev: true
 
-  /vite@5.3.5:
-    resolution: {integrity: sha512-MdjglKR6AQXQb9JGiS7Rc2wC6uMjcm7Go/NHNO63EwiJXfuk9PgqiP/n5IDJCziMkfw9n4Ubp7lttNwz+8ZVKA==}
+  /vite@5.4.0:
+    resolution: {integrity: sha512-5xokfMX0PIiwCMCMb9ZJcMyh5wbBun0zUzKib+L65vAZ8GY9ePZMXxFrHbr/Kyll2+LSCY7xtERPpxkBDKngwg==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
     peerDependencies:
@@ -2173,6 +2173,7 @@ packages:
       less: '*'
       lightningcss: ^1.21.0
       sass: '*'
+      sass-embedded: '*'
       stylus: '*'
       sugarss: '*'
       terser: ^5.4.0
@@ -2184,6 +2185,8 @@ packages:
       lightningcss:
         optional: true
       sass:
+        optional: true
+      sass-embedded:
         optional: true
       stylus:
         optional: true
